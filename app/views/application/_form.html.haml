@@ -1,0 +1,17 @@
+.form
+  Choose stars:
+  %select#stars
+    %optgroup
+      -5.times do |t|
+        %option
+          =5-t
+  %br
+  Choose type:
+  %select#type
+    %optgroup
+      -['Bar'].each do |t|
+        %option 
+          =t
+  %br
+%h1
+  %a{href: '#'} Generate >

@@ -1,0 +1,6 @@
+= render "form"
+.review
+  %h1 
+    Your #{@review.stars}-star review for a #{@review.venue}:
+  %p
+    =@review.text
